@@ -6,3 +6,7 @@ from django.http import HttpResponse
 
 def home(response):
     return HttpResponse("HELLO WORLD")
+
+
+def index(response):
+    return render(response, 'generator_app/home.html')
